@@ -205,3 +205,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Node.js
+# ===============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+dist/
+build/
+coverage/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.next/ # Se userai Next.js in futuro
