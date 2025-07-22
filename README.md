@@ -1,3 +1,8 @@
+https://prod.liveshare.vsengsaas.visualstudio.com/join?BE20CBA32976D254E320694CE1128E6EFA9F
+
+
+
+
 Applicazione di Gestione Spazi DomiQuesto progetto è un'applicazione web React costruita con Vite e TypeScript, che integra Firebase per l'autenticazione, la gestione dei ruoli e la persistenza dei dati. Include sezioni per la visualizzazione del calendario eventi, la richiesta di spazi e le informazioni sugli spazi disponibili.=====================================Tecnologie Utilizzate=====================================React: Libreria JavaScript per la costruzione di interfacce utente.Vite: Tool di build rapido per progetti web moderni.TypeScript: Linguaggio di programmazione tipizzato che si basa su JavaScript.Firebase: Piattaforma di sviluppo di Google per la creazione di applicazioni mobili e web.Firebase Authentication: Per la gestione degli utenti e dei ruoli (Ospite, Utente, Operatore, Admin, Superuser).Firestore Database: Per la memorizzazione dei dati delle richieste di spazio e dei profili utente.Firebase Hosting: Per la distribuzione dell'applicazione.Tailwind CSS: Framework CSS utility-first per uno styling rapido e responsivo.Shadcn UI: Collezione di componenti UI riutilizzabili e personalizzabili.Lucide React: Libreria di icone.=====================================Struttura del Progetto=====================================Il progetto segue una struttura standard per le applicazioni React/Vite:pippo/
 ├── node_modules/
 ├── public/
