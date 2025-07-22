@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // ... (altre opzioni, lasciale come sono se non hai avuto altri problemi)
+    "baseUrl": "./", // Modifica: La base per la risoluzione dei moduli è la root del progetto
+    "paths": {
+      "@/*": ["./src/*"] // Modifica: Mappa '@/' alla directory 'src'
+    },
+    // ... (il resto delle tue compilerOptions)
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
