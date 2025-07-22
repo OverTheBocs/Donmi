@@ -1,0 +1,98 @@
+/* Direttive Tailwind CSS - Devono essere all'inizio del file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Stili per l'elemento radice dell'applicazione */
+#root {
+  max-width: 1280px; /* Larghezza massima del contenitore principale */
+  margin: 0 auto; /* Centra orizzontalmente il contenitore */
+  padding: 2rem; /* Spaziatura interna */
+  text-align: center; /* Allinea il testo al centro */
+}
+
+/* Stili per il logo (se presente) */
+.logo {
+  height: 6em; /* Altezza del logo */
+  padding: 1.5em; /* Spaziatura interna del logo */
+  will-change: filter; /* Ottimizzazione per le animazioni del filtro */
+  transition: filter 300ms; /* Transizione fluida per il filtro */
+}
+
+/* Effetto hover per il logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(20, 184, 166, 0.6)); /* Ombra al passaggio del mouse */
+}
+
+/* Effetto hover specifico per il logo React (se usato) */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(20, 184, 166, 0.6)); /* Ombra al passaggio del mouse */
+}
+
+/* Animazione di rotazione per il logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg); /* Inizio rotazione */
+  }
+  to {
+    transform: rotate(360deg); /* Fine rotazione */
+  }
+}
+
+/* Applica l'animazione di rotazione in base alle preferenze di movimento dell'utente */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Animazione infinita per il logo */
+  }
+}
+
+/* Stili per le card */
+.card {
+  padding: 2em; /* Spaziatura interna della card */
+  border-radius: 0.5rem; /* Bordi arrotondati */
+  border: 1px solid rgba(20, 184, 166, 0.1); /* Bordo sottile */
+  background-color: rgba(20, 184, 166, 0.02); /* Colore di sfondo leggero */
+  transition: all 0.3s ease; /* Transizione fluida per tutte le proprietà */
+}
+
+/* Effetto hover per le card */
+.card:hover {
+  border-color: rgba(20, 184, 166, 0.4); /* Cambia colore del bordo al passaggio del mouse */
+}
+
+/* Stili generali per il corpo del documento, usando il font Inter */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Stili per il componente App (generalmente gestiti da Tailwind, ma inclusi per completezza se non sovrascritti) */
+.App {
+  text-align: center;
+}
+
+/* Animazione di rotazione specifica per App-logo (se utilizzata) */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Stili per l'header dell'App (generalmente gestiti da Tailwind) */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Stili per i link nell'App (generalmente gestiti da Tailwind) */
+.App-link {
+  color: #61dafb;
+}
